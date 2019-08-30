@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮动布局</title>
+    <style type="text/css">
+        .wrap1 div {
+            min-height: 200px;
+        }
+
+        .wrap1 .left {
+            float: left;
+            width: 300px;
+            background: red;
+        }
+
+        .wrap1 .right {
+            float: right;
+            width: 300px;
+            background: blue;
+        }
+
+        .wrap1 .center {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap1">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center"> 浮动布局 </div>
+    </div>
+</body>
+
+</html>
+---------------------
+作者：winne雪
+来源：CSDN
+原文：https://blog.csdn.net/m0_38134431/article/details/84372226
+版权声明：本文为博主原创文章，转载请附上博文链接！
+浮动布局的兼容性比较好，但是浮动带来的影响比较多，页面宽度不够的时候会影响布局。

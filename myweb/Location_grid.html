@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>网格布局</title>
+    <style type="text/css">
+        .wrap5 {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 200px;
+            grid-template-columns: 300px auto 300px;
+        }
+
+        .wrap5 .left {
+            background: red;
+        }
+
+        .wrap5 .right {
+            background: blue;
+        }
+
+        .wrap5 .center {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap5 wrap">
+        <div class="left"></div>
+        <div class="center"> 网格布局 </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
+---------------------
+作者：winne雪
+来源：CSDN
+原文：https://blog.csdn.net/m0_38134431/article/details/84372226
+版权声明：本文为博主原创文章，转载请附上博文链接！
+比较新的一种布局方式，兼容性没那么好。

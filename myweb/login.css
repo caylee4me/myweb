@@ -1,0 +1,137 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background: transparent;
+    display: flex;
+    font-size: 1rem; /* body默认字体大小16px */
+}
+
+/*背景*/
+.background{
+    position: fixed;
+    background-image: url('./images/2.jpg');
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/*顶栏*/
+.header{
+    position: relative;
+    width: 100%;
+    height: 4.5rem;   /* em取的是父级的字体大小为基本单位，如body字体为16px,3em即3×16=48px */
+    margin: 0rem;   /*rem取的是根元素的字体大小为基本单位，根元素即HTML元素*/
+    background-color: aqua;
+}
+/*派生选择器*/
+.header specialText{
+    color: red;
+}
+/*LOGO*/
+.header .logo{
+    /*
+    absolute相对父级元素进行定位；
+    fixed相对窗口进行定位；
+    relative相对其正常位置进行定位；
+    static是HTML默认的文件流定位；
+    inherit是继承父级元素的定位方式；
+    */
+    position: absolute;  
+    background-color:transparent;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    left: 46%;
+    top: 20%;
+}
+.header .title{
+    color: black;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    font-weight: 1000;
+    font-size: 2rem;
+}
+
+.loginForm{
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    width: 32rem;
+    height: 20rem;
+    background: transparent;
+    color: white;
+    border-color: yellowgreen;
+    border-style: solid;
+    border-radius: 1rem;
+}
+.loginForm .head{
+    position: absolute;
+    top: 0;
+    width: 32rem;
+    height: 4rem;
+    background: cadetblue;
+    opacity: 0.7;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;   
+}
+.loginForm .head .title{
+    position: absolute;
+    width: 32rem;
+    height: 4rem;
+    text-align: center;
+    top:30%;
+    font-size: 1rem;
+    font-weight: 1000;
+    color: white;
+}
+.loginForm .mainForm{
+    position: absolute;
+    bottom: 0;
+    width: 32rem;
+    height: 16rem;
+    background-color: white;
+    opacity: 0.5;
+}
+.loginForm .mainForm .txtAccount{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    color: black;
+    font-size: 1rem;
+}
+.loginForm .mainForm .txtPassword{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    color: black;
+    font-size: 1rem;
+}
+.loginForm .mainForm .inputAccount{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 10rem;
+    height: 1rem;
+    border-left-color: white;
+    border-top-color: gray;
+}
+.loginForm .mainForm .inputPassword{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 10rem;
+    height: 1rem;
+    border-left-color: white;
+    border-top-color: gray;
+}
+
+
+

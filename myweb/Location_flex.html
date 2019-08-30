@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>flex布局</title>
+    <style type="text/css">
+        .wrap3 {
+            display: flex;
+            min-height: 200px;
+        }
+
+        .wrap3 .left {
+            flex-basis: 300px;
+            background: red;
+        }
+
+        .wrap3 .right {
+            flex-basis: 300px;
+            background: blue;
+        }
+
+        .wrap3 .center {
+            flex: 10;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap3">
+        <div class="left"></div>
+        <div class="center"> flex布局 </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
+---------------------
+作者：winne雪
+来源：CSDN
+原文：https://blog.csdn.net/m0_38134431/article/details/84372226
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
+优点：自适应好，高度能够自动撑开

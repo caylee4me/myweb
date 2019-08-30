@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>table-cell表格布局</title>
+    <style type="text/css">
+        .wrap4 {
+            display: table;
+            width: 100%;
+            height: 200px;
+        }
+
+        .wrap4>div {
+            display: table-cell;
+        }
+
+        .wrap4 .left {
+            width: 300px;
+            background: red;
+        }
+
+        .wrap4 .right {
+            width: 300px;
+            background: blue;
+        }
+
+        .wrap4 .center {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap4 wrap">
+        <div class="left"></div>
+        <div class="center"> 表格布局 </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
+---------------------
+作者：winne雪
+来源：CSDN
+原文：https://blog.csdn.net/m0_38134431/article/details/84372226
+版权声明：本文为博主原创文章，转载请附上博文链接！
+优点：兼容性好，但是有时候不能固定高度，因为会被内容撑高。
