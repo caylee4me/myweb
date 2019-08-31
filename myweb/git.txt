@@ -1,0 +1,20 @@
+GIT流程：
+*** 提交到仓库 ***
+
+<第一次使用的流程，后面使用只需要 add-commit-push即可>
+$ git init    
+$ git add  *
+$ git commit -m 'initial project version'   //提交的修改说明
+$ git remote add origin https://github.com/Cayleedark/myweb.git  //添加远程仓库
+$ git push origin master
+
+报错处理：
+1>提示non-fast-forward
+$ git pull origin master --allow-unrelated-histories
+$ git push origin master
+
+2.清除账户
+打开CMD
+rundll32.exe keymgr.dll,KRShowKeyMgr
+
+
