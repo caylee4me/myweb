@@ -5,7 +5,7 @@ GIT流程：
 $ git init    
 $ git add  *
 $ git commit -m 'initial project version'   //提交的修改说明
-$ git remote add origin https://github.com/Cayleedark/myweb.git  //添加远程仓库
+$ git remote add origin https://github.com/Cayleedark/myweb.git  //添加远程仓库  orgin表示你为该远程仓库命名的别名
 $ git push origin master
 
 报错处理：
