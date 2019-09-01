@@ -11,7 +11,7 @@ body{
 /*背景*/
 .background{
     position: fixed;
-    background-image: url('./images/2.jpg');
+    background-image: url('/images/2.jpg');
     background-attachment: scroll;
     background-clip: border-box;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body{
 .header{
     position: relative;
     width: 100%;
-    height: 4.5rem;   /* em取的是父级的字体大小为基本单位，如body字体为16px,3em即3×16=48px */
+    height: 3rem;   /* em取的是父级的字体大小为基本单位，如body字体为16px,3em即3×16=48px */
     margin: 0rem;   /*rem取的是根元素的字体大小为基本单位，根元素即HTML元素*/
     background-color: aqua;
 }
@@ -51,15 +51,17 @@ body{
     left: 46%;
     top: 20%;
 }
+/*顶栏标题*/
 .header .title{
     color: black;
     position: absolute;
     top: 1rem;
     left: 50%;
     font-weight: 1000;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
+/*登录框*/
 .loginForm{
     position: fixed;
     top: 35%;
@@ -67,11 +69,12 @@ body{
     width: 32rem;
     height: 20rem;
     background: transparent;
-    color: white;
+    color: transparent;
     border-color: yellowgreen;
     border-style: solid;
-    border-radius: 1rem;
+    border-radius: 1.1rem;
 }
+/*登录框顶栏*/
 .loginForm .head{
     position: absolute;
     top: 0;
@@ -82,6 +85,7 @@ body{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;   
 }
+/*登录框顶栏标题*/
 .loginForm .head .title{
     position: absolute;
     width: 32rem;
@@ -92,6 +96,7 @@ body{
     font-weight: 1000;
     color: white;
 }
+/*登录框操作区域*/
 .loginForm .mainForm{
     position: absolute;
     bottom: 0;
@@ -99,38 +104,63 @@ body{
     height: 16rem;
     background-color: white;
     opacity: 0.5;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
+/*【帐号】*/
 .loginForm .mainForm .txtAccount{
     position: absolute;
     left: 20%;
-    top: 10%;
+    top: 20%;
     color: black;
     font-size: 1rem;
+    font-weight: 1000;
 }
-.loginForm .mainForm .txtPassword{
-    position: absolute;
-    left: 20%;
-    top: 30%;
-    color: black;
-    font-size: 1rem;
-}
+/*账号输入框*/
 .loginForm .mainForm .inputAccount{
     position: absolute;
     left: 30%;
-    top: 10%;
-    width: 10rem;
-    height: 1rem;
+    top: 20%;
+    width: 13.5rem;
+    height: 1rem; 
     border-left-color: white;
     border-top-color: gray;
 }
+/*【密码】*/
+.loginForm .mainForm .txtPassword{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    color: black;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+/*密码输入框*/
 .loginForm .mainForm .inputPassword{
     position: absolute;
     left: 30%;
-    top: 30%;
-    width: 10rem;
-    height: 1rem;
+    top: 40%;
+    width: 13.5rem;
     border-left-color: white;
     border-top-color: gray;
+}
+/*登录按钮*/
+.loginForm .mainForm .btnSubmit{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 6rem;
+    height: 2rem;
+}
+/*取消按钮*/
+.loginForm .mainForm .btnCancel{
+    position: absolute;
+    left: 25%;
+    top:60%;
+    widows: 6rem;
+    height: 2rem;
+    width: 6rem;
+    height: 2rem;
 }
 
 
