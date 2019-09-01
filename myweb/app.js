@@ -6,7 +6,7 @@
 //立即输出，定时结束
 console.log('hello word');
 setTimeout(function(){
-    console.log('3 sec passed')
+    console.log('3 sec have passed')
 }, 3000);
 
 //定时输出，判断条件结束
@@ -25,16 +25,19 @@ var timer= setInterval(() => {
 console.log(__filename);
 
 //函数
-function sayhi(name,notice){
+function sayhi(say){
     console.log('hi');
+    say();
 };
 
 //回调函数：用函数调用函数
 //示例
-var say=function(name){
-    name();
-    console.log(notice);
+var say=function(){
+    console.log('hi');
 };
 
 //执行
-sayhi(say,'测试一下回调函数');
+sayhi(say);
+
+var counter=require('./count');
+console.log(counter(['ruby','nodejs','react']));
