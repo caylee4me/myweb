@@ -5,18 +5,17 @@
 
 //立即输出，定时结束
 console.log('hello word');
-setTimeout(function(){
+setTimeout(function () {
     console.log('3 sec have passed')
 }, 3000);
 
 //定时输出，判断条件结束
-var time=0;
-var timer= setInterval(() => {
-    time+=2;
-    console.log(time+'sec passed')
-    if(time>5)
-    {
-        clearInterval(timer);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+var time = 0;
+var timer = setInterval(() => {
+    time += 2;
+    console.log(time + 'sec passed')
+    if (time > 5) {
+        clearInterval(timer);
     }
 }, 2000);
 
@@ -25,19 +24,21 @@ var timer= setInterval(() => {
 console.log(__filename);
 
 //函数
-function sayhi(say){
+function sayhi(say) {
     console.log('hi');
     say();
 };
 
 //回调函数：用函数调用函数
 //示例
-var say=function(){
+var say = function () {
     console.log('hi');
 };
 
 //执行
 sayhi(say);
 
-var counter=require('./count');
-console.log(counter(['ruby','nodejs','react']));
+var stuff = require('./count');
+console.log(stuff.counter('123'));
+console.log(stuff.adder(1,2));
+console.log(stuff.pi);
