@@ -1,20 +1,23 @@
-GITÁ÷³Ì£º
-*** Ìá½»µ½²Ö¿â ***
+GITï¿½ï¿½ï¿½Ì£ï¿½
+*** ï¿½á½»ï¿½ï¿½ï¿½Ö¿ï¿½ ***
 
-<µÚÒ»´ÎÊ¹ÓÃµÄÁ÷³Ì£¬ºóÃæÊ¹ÓÃÖ»ĞèÒª add-commit-push¼´¿É>
+<ï¿½ï¿½Ò»ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ì£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ö»ï¿½ï¿½Òª add-commit-pushï¿½ï¿½ï¿½ï¿½>
 $ git init    
 $ git add  *
-$ git commit -m 'initial project version'   //Ìá½»µÄĞŞ¸ÄËµÃ÷
-$ git remote add origin https://github.com/Cayleedark/myweb.git  //Ìí¼ÓÔ¶³Ì²Ö¿â  orgin±íÊ¾ÄãÎª¸ÃÔ¶³Ì²Ö¿âÃüÃûµÄ±ğÃû
+$ git commit -m 'initial project version'   //ï¿½á½»ï¿½ï¿½ï¿½Ş¸ï¿½Ëµï¿½ï¿½
+$ git remote add origin https://github.com/Cayleedark/myweb.git  //ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì²Ö¿ï¿½  orginï¿½ï¿½Ê¾ï¿½ï¿½Îªï¿½ï¿½Ô¶ï¿½Ì²Ö¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
 $ git push origin master
 
-±¨´í´¦Àí£º
-1>ÌáÊ¾non-fast-forward
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+1>ï¿½ï¿½Ê¾non-fast-forward
 $ git pull origin master --allow-unrelated-histories
 $ git push origin master
 
-2.Çå³ıÕË»§
-´ò¿ªCMD
+2.ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
+ï¿½ï¿½CMD
 rundll32.exe keymgr.dll,KRShowKeyMgr
+
+è®¾ç½®npmæ·˜å®æºè§£å†³NPMä¸‹è½½ç‰¹åˆ«æ…¢çš„é—®é¢˜ï¼š
+npm config set registry https://registry.npmjs.org
 
 
