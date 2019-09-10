@@ -1,13 +1,10 @@
-var http=require('http');
-var fs=require('fs');
+var Server=require('./server');
+var router=require('./router');
+var handler=require('./handler');
 
-var server=http.createServer(function(require,response){
-    console.log('request received');
-    response.writeHead(200,{'content-Type':'text/html'});
-    var loginForm= fs.createReadStream('../myweb/view/login.html','utf8');
-    loginForm.pipe(response);
-});
+var handle={};
+handle["/"]=handler.home;
+handle["/home"]=handler.home;
+handle["/review"]=handler.review;
 
-server.listen(3001,'localhost');
-
-console.log('Server started on localhost port 3001');
+Server.startServer(router.route,handle);

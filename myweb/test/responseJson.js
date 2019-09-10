@@ -10,6 +10,6 @@ var server=http.createServer(function(request,response){
     response.end(JSON.stringify(myobj));
 })
 
-server.listen(3000,'localhost');
+server.listen(3001,'localhost');
 
-console.log('Server started on localhost port 3000');
+console.log('Server started on localhost port 3001');
